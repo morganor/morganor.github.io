@@ -17,12 +17,12 @@ function startGame() {
 }
 
 var myGameArea = {
-    canvas : document.createElement("canvas"),
+    canvas : document.getElementById("canvas"),
     start : function() {
         this.canvas.width = 480;
         this.canvas.height = 270;
         this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        //document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.interval = setInterval(updateGameArea, 20);
         window.addEventListener('keydown', function (e) {
             myGameArea.keys = (myGameArea.keys || []);
@@ -74,6 +74,7 @@ function updateGameArea() {
   <a class="active" href="/jeux/"><i class="fa fa-fw fa-gamepad"></i> Jeux</a> 
   <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
 </div>
+<canvas id="canvas"/>
 <p>Make sure this window has focus, then use the arrow keys on you keyboard to move the red square.</p>
 <p>When pressing both the left and the down arrow, the red square will move both down and to the left.</p>
 </body>
