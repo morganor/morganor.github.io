@@ -41,3 +41,9 @@ h1 {
     display: block;
   }
 }
+
+/* Current/active navbar link */
+.ic-home:before {	
+    content: "";
+    background: url("../images/home.png") no-repeat;
+}
