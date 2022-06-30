@@ -1,11 +1,5 @@
 body {
-  background-color: lightblue;
-}
-
-h1 {
-  color: navy;
-  text-align: center;
-  font-size: xxx-large;
+  margin: 0px;
 }
 /* Style the navigation bar */
 .navbar {
