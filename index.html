@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="style.css">
-	<script
-	  src="https://code.jquery.com/jquery-3.6.0.min.js"
-	  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-	  crossorigin="anonymous"></script>
-	<script>
-		$(function()[
-			$('#header).load('header.html');
-		]);
-	</script>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="../header.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<div id="header"></div>
+		<div class="navbar">
+			<a class="active" href="../"><i class="fa fa-fw fa-home"></i> Home</a> 
+			<a href="/collections-pieces/"><i class="fa fa-fw fa-search"></i> Collections</a> 
+			<a href="/jeux/"><i class="fa fa-fw fa-gamepad"></i> Jeux</a> 
+			<a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+		</div>
 		<h1>Hello World</h1>
 		<h2><a href="/collections-pieces/">Mes collections de pièces</a></h2>
 		<h2><a href="/jeux/">Mes jeux</a></h2>
